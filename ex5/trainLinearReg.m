@@ -5,9 +5,8 @@ function [theta] = trainLinearReg(X, y, lambda)
 %   the dataset (X, y) and regularization parameter lambda. Returns the
 %   trained parameters theta.
 %
-
 % Initialize Theta
-initial_theta = zeros(size(X, 2), 1); 
+initial_theta = zeros(size(X, 2), 1);
 
 % Create "short hand" for the cost function to be minimized
 costFunction = @(t) linearRegCostFunction(X, y, t, lambda);
